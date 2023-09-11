@@ -36,7 +36,7 @@ function validateRG(rg) {
     let msgErro = rg.parentNode.querySelector('.msg-erro-rg');
     console.log(msgErro);
     const submitButton = document.querySelector("#button");
-    if(rg.value.length < 7 || rg.value.length > 10) {
+    if(rg.value.length < 4 || rg.value.length > 10) {
         message = 'RG inválido';
         msgErro.textContent = message;
         submitButton.disabled = true;
