@@ -25,7 +25,7 @@ function addInput() {
   divFlex.appendChild(name);
   divFlex.appendChild(rg);
   divFlex.appendChild(deleteBtn);
-  if(inputGroup.children.length < 3) {
+  if(inputGroup.children.length < 2) {
     inputGroup.appendChild(divFlex);
   }
 }
