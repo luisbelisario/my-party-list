@@ -12,9 +12,10 @@ firebase.initializeApp(firebaseConfig);
 
 var guest = firebase.database().ref('my-party-list');
 
-document.querySelector(".submit").addEventListener("click", saveData);
+document.querySelector("#button").addEventListener("click", saveData);
 
-function saveData() {
+function saveData(e) {
+    e.preventDefault();
     var names = document.querySelectorAll(".name");
 
     var rgs = document.querySelectorAll(".rg");

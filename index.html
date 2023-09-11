@@ -22,18 +22,21 @@
         </div>
         <div class="input-group">
             <div class="input-wrapper">
-                <input type="text" class="name" placeholder="Nome">
-                <input type="text" class="rg" placeholder="RG">
+                <input type="text" class="name" placeholder="Nome" required>
+                <span class="msg-erro-name"></span>
+                <input type="text" class="rg" placeholder="RG" maxlength="10" required>
+                <span class="msg-erro-rg"></span>
                 <a href="#" class="add">Adicionar convidado</a>
             </div>
         </div>
         <div class="submit-container">
-            <a href="#" class="submit">Confirmar</a>
+            <button href="#" id="button">Confirmar</button>
         </div>
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="/formScript.js"></script>
+    <script src="/validateFields.js"></script>
     <script src="/dbService.js"></script>
 </body>
 </html>

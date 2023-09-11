@@ -65,6 +65,13 @@ body {
     border-radius: 5px;
 }
 
+.input-wrapper span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: red;
+}
+
 .add {
     text-decoration: none;
     display: inline-block;
@@ -107,8 +114,11 @@ body {
     align-items: center;
 }
 
-.submit-container a {
+.submit-container button {
+    border:none!important;
     text-decoration: none;
+    box-shadow: none;
+    cursor: pointer;
     background: #8bc34a;
     color: #fff;
     padding: 10px;

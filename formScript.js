@@ -7,11 +7,19 @@ function addInput() {
   name.type = "text";
   name.className = "name";
   name.placeholder = "Nome";
+  name.setAttribute("required", "");
+
+  const erroName = document.createElement("span");
+  erroName.className = "msg-erro";
 
   const rg = document.createElement("input");
   rg.type = "text";
   rg.className = "rg"
   rg.placeholder = "RG";
+  rg.setAttribute("required", "");
+
+  const erroRG = document.createElement("span");
+  erroRG.className = "msg-erro";
 
   const deleteBtn = document.createElement("a");
   deleteBtn.className = "deleteBtn";
